@@ -67,8 +67,8 @@
           ],
           "minLength": 1
         },
-        "amount": {
-          "title": "Amount",
+        "value": {
+          "title": "Value",
           "description": "The value of this particular entry.",
           "$ref": "#/definitions/Value"
         }
