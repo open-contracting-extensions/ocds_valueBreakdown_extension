@@ -1,0 +1,21 @@
+{
+  "name": {
+    "en": "Value breakdown"
+  },
+  "description": {
+    "en": "Adds a value breakdown array to the Item, Award and Contract objects, to breakdown their total amounts."
+  },
+  "documentationUrl": {
+    "en": "https://github.com/open-contracting-extensions/ocds_valueBreakdown_extension"
+  },
+  "compatibility": [
+    "1.1"
+  ],
+  "schemas": [
+    "release-schema.json"
+  ],
+  "contactPoint": {
+    "name": "Open Contracting Partnership",
+    "email": "data@open-contracting.org"
+  }
+}

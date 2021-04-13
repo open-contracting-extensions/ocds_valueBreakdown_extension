@@ -1,0 +1,79 @@
+{
+  "definitions": {
+    "Item": {
+      "properties": {
+        "valueBreakdown": {
+          "type": "array",
+          "title": "Value breakdown",
+          "description": "Information about the value breakdown of the item value, such as applied discounts and charges. It is used at item level when there is no information at unit level.",
+          "items": {
+            "$ref": "#/definitions/ValueBreakdown"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "Award": {
+      "properties": {
+        "valueBreakdown": {
+          "type": "array",
+          "title": "Value breakdown",
+          "description": "Information about the value breakdown of the award value, such as applied discounts and charges.",
+          "items": {
+            "$ref": "#/definitions/ValueBreakdown"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "Contract": {
+      "properties": {
+        "valueBreakdown": {
+          "type": "array",
+          "title": "Value breakdown",
+          "description": "Information about the value breakdown of the contract value, such as applied discounts and charges.",
+          "items": {
+            "$ref": "#/definitions/ValueBreakdown"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "ValueBreakdown": {
+      "type": "object",
+      "title": "Detailed value breakdown",
+      "description": "This section allows a detailed value breakdown to be expressed, as all the applied fees, charges and discounts.",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "title": "Identifier",
+          "description": "An identifier for this particular entry.",
+          "type": [
+            "string"
+          ],
+          "minLength": 1
+        },
+        "description": {
+          "title": "Description",
+          "description": "A short free text description of this entry.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "amount": {
+          "title": "Amount",
+          "description": "The value of this particular entry.",
+          "$ref": "#/definitions/Value"
+        }
+      },
+      "minProperties": 1
+    }
+  }
+}
