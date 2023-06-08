@@ -1,5 +1,7 @@
 # Value breakdown
 
+**This is a draft extension and is not recommended for use. Please contribute to [this GitHub issue](https://github.com/open-contracting/standard/issues/1070).**
+
 Adds a value breakdown array to the Item, Award and Contract objects, to breakdown their total amounts.
 
 ## Example
