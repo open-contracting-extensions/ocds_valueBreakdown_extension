@@ -3,9 +3,9 @@
     "Item": {
       "properties": {
         "valueBreakdown": {
-          "type": "array",
           "title": "Value breakdown",
           "description": "Information about the value breakdown of the item value, such as applied discounts and charges. It is used at item level when there is no information at unit level.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/ValueBreakdown"
           },
@@ -17,9 +17,9 @@
     "Award": {
       "properties": {
         "valueBreakdown": {
-          "type": "array",
           "title": "Value breakdown",
           "description": "Information about the value breakdown of the award value, such as applied discounts and charges.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/ValueBreakdown"
           },
@@ -31,9 +31,9 @@
     "Contract": {
       "properties": {
         "valueBreakdown": {
-          "type": "array",
           "title": "Value breakdown",
           "description": "Information about the value breakdown of the contract value, such as applied discounts and charges.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/ValueBreakdown"
           },
@@ -43,9 +43,9 @@
       }
     },
     "ValueBreakdown": {
-      "type": "object",
       "title": "Detailed value breakdown",
       "description": "This section allows a detailed value breakdown to be expressed, as all the applied fees, charges and discounts.",
+      "type": "object",
       "required": [
         "id"
       ],
